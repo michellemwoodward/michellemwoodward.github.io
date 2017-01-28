@@ -1,0 +1,170 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+section {
+  padding-top:75px;
+  padding-bottom:75px;
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    padding-top: 150px;
+    min-height:100%;
+    text-align: center;
+  position: relative;
+  z-index: 1;
+  background: url("../images/bg-1.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color:#fff;
+}
+.about-section {
+    background:#fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.about-section:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.about-section:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+.web-section {
+    min-height: 100%;
+    text-align: center;
+    background: #f2f2f2;
+  position: relative;
+  z-index: 1;
+}
+.web-section:before, .web-section:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.web-section:before {
+  top: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.web-section:after {
+  bottom: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+
+.audio-section {
+    min-height: 100%;
+    text-align: center;
+    background: #fff;
+}
+.video-section a{
+  color:#bfbfbf;
+  text-decoration: underline;
+}
+.video-section a:hover{
+  color:#f2f2f2;
+}
+.video-section {
+    min-height: 100%;
+    text-align: center;
+    background: #3573b1;
+    color:#fff;
+  position: relative;
+  z-index: 1;
+}
+.video-section:before, .video-section:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.video-section:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.video-section:after {
+  bottom: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.contact-section {
+    min-height:60%;
+    background: linear-gradient(to top, transparent 0%, #d9d9d9 100%), url("../images/bg-4.jpg") no-repeat center bottom;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+  background-attachment: fixed;
+  width:100%;
+  text-align: center;
+  color:#fff;
+  }
+.contact-section a{
+  color:#808080;
+  text-decoration: underline;
+}
+.contact-section a:hover{
+  color: ##bfbfbf;
+}
