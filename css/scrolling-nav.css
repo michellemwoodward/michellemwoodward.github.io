@@ -46,13 +46,13 @@ of those sections to manage the look and feel of the site. */
   background-attachment: fixed;
   color:#fff;
 }
-.about-section {
+.writing-section {
     background:#fff;
     text-align: center;
     position: relative;
     z-index: 1;
 }
-.about-section:after {
+.writing-section:after {
   background: inherit;
   content: '';
   display: block;
@@ -63,7 +63,7 @@ of those sections to manage the look and feel of the site. */
   z-index: -1;
   -webkit-backface-visibility: hidden;
 }
-.about-section:after {
+.writing-section:after {
   bottom: 0;
   -webkit-transform: skewY(-1.5deg);
           transform: skewY(-1.5deg);
@@ -103,7 +103,7 @@ of those sections to manage the look and feel of the site. */
           transform-origin: 100%;
 }
 
-.audio-section {
+.web-section {
     min-height: 100%;
     text-align: center;
     background: #fff;
@@ -141,6 +141,39 @@ of those sections to manage the look and feel of the site. */
           transform-origin: 0 0;
 }
 .video-section:after {
+  bottom: 0;
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+
+.graphic-section {
+    text-align: center;
+    background: #F5F5F5;
+  position: relative;
+  z-index: 1;
+}
+.graphic-section:before, .video-section:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
+.graphic-section:before {
+  top: 0;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.graphic-section:after {
   bottom: 0;
   -webkit-transform: skewY(1.5deg);
           transform: skewY(1.5deg);
